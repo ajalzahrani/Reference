@@ -32,4 +32,17 @@ let sum100 = numbers.reduce((preValue, value, index, array) => {
 }, 100)
 // console.log(sum100)
 
-// 
+// Includes:- check if array includes passed parameter
+console.log(numbers.includes(100))
+console.log(numbers.includes(12))
+
+// Finds:- returns the value of the first array element that passes a test
+console.log(numbers.find((value, index, array) => {
+    return value > 10
+}))
+
+// findIndex:- method returns the index of the first array element that passes a test function.
+console.log(numbers.findIndex((value, index, array) => {
+    return value > 10
+}))
+
